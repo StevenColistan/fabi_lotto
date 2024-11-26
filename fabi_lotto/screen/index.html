@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto UI</title>
+    
+    <script src="script/index.js"></script>
+    <link rel="stylesheet" href="../screen/style/style.css">
+     <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c71b1563d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body style="display: none;">
+
+    <div class="bg-white rounded-2xl shadow-xl w-120 p-6 relative" style="display: none;">
+
+        <div class="bg-blue-700 rounded-t-2xl text-white p-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">LOTTO <span class="bg-purple-600 text-xs py-1 px-2 rounded-full">3 AUS 35</span></h1>
+                <i class="fas fa-times text-white cursor-pointer"></i>
+            </div>
+            <p class="text-sm mt-1">99% der Lottospieler hören auf bevor sie die Millionen ziehen!</p>
+        </div>
+
+        <div class="flex justify-between mt-4">
+            <div class="bg-purple-600 text-white font-bold py-2 px-4 rounded-lg">Lottoschein</div>
+            <span class="bg-green-500 text-white font-bold py-2 px-4 rounded-lg"></span>
+        </div>
+
+        <div class="grid grid-cols-7 gap-2 mt-6">
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('1')">1</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('2')">2</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('3')">3</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('4')">4</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('5')">5</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('6')">6</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('7')">7</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('8')">8</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('9')">9</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('10')">10</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('11')">11</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('12')">12</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('13')">13</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('14')">14</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('15')">15</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('16')">16</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('17')">17</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('18')">18</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('19')">19</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('20')">20</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('21')">21</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('22')">22</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('23')">23</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('24')">24</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('25')">25</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('26')">26</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('27')">27</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('28')">28</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('29')">29</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('30')">30</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('31')">31</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('32')">32</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('33')">33</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('34')">34</button>
+            <button class="w-12 h-12 bg-gray-200 rounded-full text-gray-900 font-bold"onclick="lotto('35')">35</button>
+        </div>
+
+        <div class="mt-6 text-center">
+            <button class="bg-blue-600 text-white font-bold py-2 px-8 rounded-lg" onclick="submitNumbers()">Ausfüllen</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
